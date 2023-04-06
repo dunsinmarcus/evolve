@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BOOTSTRAP STYLESHEET LIBRARY -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Evolve | Pricing</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+
+      <!-- NAVBAR BRAND -->
+      <a class="navbar-brand mt-1" href="index.html">Evolve</a>
+
+      <!-- TOGGLER ICON FOR PHONES -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <!-- LEFT-SIDE NAVBAR LINK -->
+        <ul class="navbar-list navbar-nav d-flex me-auto my-2 my-lg-0">
+          <li class="nav-item mt-2">
+            <a class="nav-link left-side-nav-link" href="features.html">Features</a>
+          </li>
+
+          <li class="nav-item mt-2">
+            <a class="nav-link left-side-nav-link" href="pricing.html">Pricing</a>
+          </li>
+        </ul>
+
+        <!-- RIGHT-SIDE NAVBAR BUTTONS -->
+        <ul class="navbar-list navbar-nav">
+
+          <!-- LOGIN NAVBAR LINK -->
+          <li class="nav-item mt-2">
+            <a class="nav-link btn btn-outline-secondary btn-first me-2 px-3" role="button" data-bs-toggle="modal" data-bs-target="#loginModal" href="#">Sign In</a>
+          </li>
+
+          <!-- LOGIN MODAL -->
+          <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Sign In</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div>
+                      <label for="inputUsername" class="form-label">Username</label>
+                      <input type="username" class="form-control form-control-lg" id="inputUsername">
+                    </div>
+
+                    <div>
+                      <label for="inputPassword" class="form-label">Password</label>
+                      <input type="password" class="form-control form-control-lg" id="inputPassword">
+                    </div>
+                  </form>
+                  <p>Don't have an account? <a href="#" data-bs-target="#signupModal" data-bs-toggle="modal">Sign up here</a>.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Sign In</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SIGN UP NAVBAR LINK -->
+          <li class="nav-item mt-2">
+            <a class="nav-link btn btn-second px-3" role="button" data-bs-toggle="modal" data-bs-target="#signupModal" href="#">Start Selling</a>
+          </li>
+
+          <!-- SIGN UP MODAL -->
+          <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div>
+                      <label for="inputUsername" class="form-label">Username</label>
+                      <input type="username" class="form-control form-control-lg" id="inputUsername">
+                    </div>
+
+                    <div>
+                      <label for="inputEmail" class="form-label">Email</label>
+                      <input type="email" class="form-control form-control-lg" id="inputEmail">
+                    </div>
+
+                    <div>
+                      <label for="inputPassword" class="form-label">Password</label>
+                      <input type="password" class="form-control form-control-lg" id="inputPassword">
+                    </div>
+                  </form>
+                  <p>Already have an account? <a href="#" data-bs-target="#loginModal" data-bs-toggle="modal">Sign in here</a>.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Sign Up</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- INTRO SECTION -->
+  <header id="intro" class="container-fluid text-center mt-5">
+    <div class="heading-inner pt-5">
+      <h1 class="intro-heading display-3 pt-5"><strong>10% forever!</strong></h1>
+
+      <p class="paragraph1">We keep the rate flat so you can focus on doing what you do best.</p>
+    </div>
+  </header>
+</body>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BOOTSTRAP STYLESHEET LIBRARY -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Evolve</title>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+
+      <!-- NAVBAR BRAND -->
+      <a class="navbar-brand mt-1" href="index.html">Evolve</a>
+
+      <!-- TOGGLER ICON FOR PHONES -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <!-- LEFT-SIDE NAVBAR LINK -->
+        <ul class="navbar-list navbar-nav d-flex me-auto my-2 my-lg-0">
+          <li class="nav-item mt-2">
+            <a class="nav-link left-side-nav-link" href="features.html">Features</a>
+          </li>
+
+          <li class="nav-item mt-2">
+            <a class="nav-link left-side-nav-link" href="pricing.html">Pricing</a>
+          </li>
+        </ul>
+
+        <!-- RIGHT-SIDE NAVBAR BUTTONS -->
+        <ul class="navbar-list navbar-nav">
+
+          <!-- LOGIN NAVBAR LINK -->
+          <li class="nav-item mt-2">
+            <a class="nav-link btn btn-outline-secondary btn-first me-2 px-3" role="button" data-bs-toggle="modal" data-bs-target="#loginModal" href="#">Sign In</a>
+          </li>
+
+          <!-- LOGIN MODAL -->
+          <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Sign In</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div>
+                      <label for="inputUsername" class="form-label">Username</label>
+                      <input type="username" class="form-control form-control-lg" id="inputUsername">
+                    </div>
+
+                    <div>
+                      <label for="inputPassword" class="form-label">Password</label>
+                      <input type="password" class="form-control form-control-lg" id="inputPassword">
+                    </div>
+                  </form>
+                  <p>Don't have an account? <a href="#" data-bs-target="#signupModal" data-bs-toggle="modal">Sign up here</a>.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Sign In</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SIGN UP NAVBAR LINK -->
+          <li class="nav-item mt-2">
+            <a class="nav-link btn btn-second px-3" role="button" data-bs-toggle="modal" data-bs-target="#signupModal" href="#">Start Selling</a>
+          </li>
+
+          <!-- SIGN UP MODAL -->
+          <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div>
+                      <label for="inputUsername" class="form-label">Username</label>
+                      <input type="text" name="username" class="form-control form-control-lg" id="inputUsername">
+                    </div>
+
+                    <div>
+                      <label for="inputEmail" class="form-label">Email</label>
+                      <input type="email" name="email" class="form-control form-control-lg" id="inputEmail">
+                    </div>
+
+                    <div>
+                      <label for="inputPassword" class="form-label">Password</label>
+                      <input type="password" name="password" class="form-control form-control-lg" id="inputPassword">
+                    </div>
+
+                    <p>Already have an account? <a href="#" data-bs-target="#loginModal" data-bs-toggle="modal">Sign in here</a>.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="submit" onclick="getInputValue(this.form);" class="btn btn-primary">Sign Up</button>
+                    </div>
+                  </form>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- INTRO SECTION -->
+  <header id="intro" class="container-fluid text-center mt-5">
+    <div class="heading-inner pt-5">
+      <h1 class="intro-heading display-3 pt-5"><strong>Sell Courses and Community Memberships</strong></h1>
+
+      <p class="paragraph1 ">We made it so easy, even a 10 year old could do it.</p>
+          
+      <div class="row pt-4">
+        <div class="col"></div>
+        <a role="button" data-bs-toggle="modal" data-bs-target="#signupModal" href="#" class="btn btn-lg d-block mt-5 col-8 intro-button">Start Selling</a>
+        <div class="col"></div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="text-center">
+    <div class="section1">
+      <div class="container py-5">
+        <h2 class="pb-3">Turn Your Knowledge into Income</h2>
+        <p class="paragraph">Evolve is a platform that makes it super easy for any Nigerian with a smart phone, an internet connection, and some knowledge, to make money by selling courses online.</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="container py-5">
+        <h2 class="pb-3">Own Your Customers</h2>
+        <p class="paragraph">You can export a list of email addresses of every customer who's ever bought your course, anytime.</p>
+      </div>
+    </div>
+
+    <div class="section3">
+      <div class="container py-5">
+        <h2 class="pb-3">Zero Start-up Charge</h2>
+        <p class="paragraph">Unlike other platforms, we don't charge upfront package fees, so you don't have to pay a kobo before you start making profit.</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="container py-5">
+        <h2 class="pb-3">Receive Payment Easily</h2>
+        <p class="paragraph">When someone buys your course, you get paid directly into your bank account, except you choose otherwise.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container text-center">
+    <p>Evolve &copy; 2023</p>
+  </footer>
+
+  <!-- POPPER JS LIBRARY -->
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP JS LIBRARY -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <!-- FIREBASE SDK -->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAYxYDR3YZBv0ECPy2XuInxKUm9azuJP4c",
+      authDomain: "evolve-84ca4.firebaseapp.com",
+      projectId: "evolve-84ca4",
+      storageBucket: "evolve-84ca4.appspot.com",
+      messagingSenderId: "57649292636",
+      appId: "1:57649292636:web:25be631749db7a054b0d99",
+      measurementId: "G-29CD1Y7VDG"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+</body>
+</html>

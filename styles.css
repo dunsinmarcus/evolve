@@ -1,0 +1,53 @@
+#intro {
+  height: 85vh;
+}
+
+.intro-button{
+  background-color: #ffc000;
+}
+
+.intro-button:hover {
+  background-color: #ffb000;
+  border: 1px solid black;
+}
+
+.heading-inner {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.left-side-nav-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.btn-first{
+  background-color: white;
+}
+
+.btn-first:hover {
+  background-color: #ffc000;
+}
+
+.btn-second{
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+
+.btn-second:hover {
+  background-color: #ffc000;
+  border: 1px solid black;
+}
+
+.paragraph1 {
+  font-size: 20px;
+}
+
+.paragraph {
+  font-size: 18px;
+}
+
+.section1, .section3 {
+  background-color: #ffc000;
+}
